@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My-Giro</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 1. Шапка, содержащая логотип, телефон компании и кнопку для заказа звонка; -->
+    <header id="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="img/logo.png" alt="" width="75px" height="75px">
+            </div>
+            <div class="menu">
+                <a href="#header"><button>Главная</button></a>
+                <a href="#tovar"><button>Каталог</button></a>
+                <a href="#kons"><button>Консультанты</button></a>
+                <a href="#brand"><button>Бренды</button></a>
+                <a href="#onas"><button>О нас</button></a>
+            </div>
+            <div class="call">
+                <a href="tel:123-456-789">Тел:123-456-789</a>
+                <a href="tel:123-456-789"><button>Заказать звонок</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- /1. Шапка, содержащая логотип, телефон компании и кнопку для заказа звонка; -->
+
+
+
+
+    <!-- 2. Блок со слайдером, содержащим преимущества компании; 
+	Просто перечисление всех картинок которые будут показаны.
+	-->
+    <section class="slider">
+        <img class="slider_img" src="img/slider.jpg" alt="Это гироскутер" height="700px">
+        <img class="slider_img" src="img/slider2.jpg" alt="" height="700px">
+        <img class="slider_img" src="img/slider3.jpg" alt="" height="700px">
+        <img class="slider_img" src="img/slider4.jpg" alt="" height="700px">
+        <img class="slider_img" src="img/slider5.jpg" alt="" height="700px">
+    </section>
+    <!-- / Конец 2. Блока со слайдером, содержащим преимущества компании; -->
+
+
+
+
+    <!-- 3. Блок, содержащий особенности особенности гироскутеров, электросамокотов и сигвеев; -->
+    <section class="osob">
+        <div class="wrap_osob">
+            <h2>Особенности</h2>
+            <img src="img/giro.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi iusto dolore deserunt est fuga ullam, quam earum quas impedit placeat expedita voluptatibus dolorem ipsa non commodi ea. Voluptates, hic, voluptatem. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Sequi iusto dolore deserunt est fuga ullam, quam earum quas impedit placeat expedita voluptatibus dolorem ipsa non commodi ea. Voluptates, hic, voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Sequi iusto dolore deserunt est fuga ullam, quam earum quas impedit placeat expedita voluptatibus dolorem ipsa non commodi ea. Voluptates, hic, voluptatem.</p>
+        </div>
+    </section>
+    <!-- /3. Блок, содержащий особенности особенности гироскутеров, электросамокотов и сигвеев; -->
+
+
+
+
+    <!-- 4. Блок со списком товаров: фото, название, цена, вид; -->
+    <!-- 5. Фильтр по виду: Всё, Гироскутеры, Электросамокаты, Сигвеи; -->
+    <section id="tovar" class="tovars">
+        <select onchange="document.location=this.value">
+		<option value="#giro">Все</option>
+		<option value="#giro">Гироскутеры</option>
+		<option value="#electro">Электросамокаты</option>
+		<option value="#sig">Сигвеи</option>
+	    </select>
+        <h2 id="giro">Гироскутеры</h2>
+        <div class="wrap_tovars">
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+        </div>
+        <h2 id="electro">Электросамокаты</h2>
+        <div class="wrap_tovars">
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+        </div>
+        <h2 id="sig">Сигвеи</h2>
+        <div class="wrap_tovars">
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+            <div class="card">
+                <img src="img/slider.jpg" alt="">
+                <h3>Название товара</h3>
+                <p>Цена: 00 руб.</p>
+            </div>
+        </div>
+    </section>
+    <!-- /4. Блок со списком товаров: фото, название, цена, вид; -->
+    <!-- /5. Фильтр по виду: Всё, Гироскутеры, Электросамокаты, Сигвеи; -->
+
+    <!-- 6. Блок, содержащий информацию о консультантах; -->
+
+    <h2 id="kons" class="brand_header">
+        Консультанты
+    </h2>
+    <section id="cons" class="cons">
+        <div class="wrap_cons">
+            <img src="img/cons.jpg" alt="">
+            <h3>Иванов Иван Иванович</h3>
+            <p>Тел:123-456-789</p>
+            <p>Консультант по Гироскутерам</p>
+        </div>
+        <div class="wrap_cons">
+            <img src="img/cons.jpg" alt="">
+            <h3>Иванов Иван Иванович</h3>
+            <p>Тел:123-456-789</p>
+            <p>Консультант по Электросамокатам</p>
+        </div>
+        <div class="wrap_cons">
+            <img src="img/cons.jpg" alt="">
+            <h3>Иванов Иван Иванович</h3>
+            <p>Тел:123-456-789</p>
+            <p>Консультант по Сигвеям</p>
+        </div>
+    </section>
+    <!-- /6. Блок, содержащий информацию о консультантах; -->
+
+
+
+
+    <!-- 7. Блок, содержащий бренды, представленные в магазине; -->
+    <h2 id="brand" class="brand_header">
+        Бренды
+    </h2>
+    <section class="brand">
+        <div class="wrap_brand">
+            <img src="img/brand.jpg" alt="">
+        </div>
+        <div class="wrap_brand">
+            <img src="img/brand2.jpg" alt="">
+        </div>
+        <div class="wrap_brand">
+            <img src="img/brand3.jpg" alt="">
+        </div>
+    </section>
+    <!-- /7. Блок, содержащий бренды, представленные в магазине; -->
+
+
+
+
+    <!-- 8. Блок, содержащий полезную информацию: фото и текст к нему; -->
+    <!-- 9. Блок, содержащий краткую информацию о компании и форму для подписки на email-рассылки. Поля формы: имя, адрес эл. почты, кнопка «подписаться». -->
+    <section id="onas" class="info">
+        <h2>О компании</h2>
+        <img src="img/onas.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quas vitae fugiat sit voluptate natus fuga blanditiis at ad repellat quibusdam, cumque nam mollitia officiis debitis omnis odio harum. Quasi! Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Tempora quas vitae fugiat sit voluptate natus fuga blanditiis at ad repellat quibusdam, cumque nam mollitia officiis debitis omnis odio harum. Quasi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quas
+            vitae fugiat sit voluptate natus fuga blanditiis at ad repellat quibusdam, cumque nam mollitia officiis debitis omnis odio harum. Quasi!</p>
+        <h2>Форма подписки</h2>
+        <form action="#">
+            <input type="name" placeholder="Имя" required="">
+            <input type="email" placeholder="Эл.почта" required="">
+            <input type="tel" placeholder="Телефон" required="">
+            <input type="password" placeholder="Пароль" required="">
+            <button>Подписаться</button>
+        </form>
+    </section>
+    <!-- /8. Блок, содержащий полезную информацию: фото и текст к нему; -->
+    <!-- /9. Блок, содержащий краткую информацию о компании и форму для подписки на email-рассылки. Поля формы: имя, адрес эл. почты, кнопка «подписаться». -->
+
+
+
+
+    <!-- 10. Кнопка, позволяющая вернуться наверх. -->
+    <a href="#header">
+        <img src="img/up.jpg" alt="Кнопка вверх" width="75px" height="75px" class="arrow_up" title="На начало">
+    </a>
+    <!-- /10. Кнопка, позволяющая вернуться наверх. -->
+
+    <!-- Подвал -->
+    <footer id="footer">
+        <nav class="nav">
+            <div class="menu">
+                <a href="#header"> Главная </a>
+                <a href="#tovar"> Каталог </a>
+                <a href="#kons"> Консультанты </a>
+                <a href="#brand"> Бренды </a>
+                <a href="#onas"> О нас </a>
+            </div>
+            <div class="copy">
+                <b>&copy;ИановИван Иванович</b>
+            </div>
+        </nav>
+
+    </footer>
+    <!-- Подвал -->
+</body>
+
+</html>

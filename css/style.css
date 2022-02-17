@@ -1,0 +1,296 @@
+    /* Обнуляет ранее установленные параметры */
+    
+    html,
+    body {
+        background: grey;
+        margin: 0;
+        padding: 0;
+    }
+    /* 1. Шапка, содержащая логотип, телефон компании и кнопку для заказа звонка; */
+    
+    header {
+        background: skyblue;
+        box-shadow: 0 2px 7px black;
+    }
+    /* Меню со ссылками в заголовке  */
+    
+    header a {
+        text-align: center;
+        color: black;
+        font-size: 17px;
+        font: bold;
+    }
+    /* Стиль button рисует кнопки*/
+    
+    header button {
+        background-color: yellow;
+        font-size: 17px;
+        border-radius: 10px;
+        font: bold;
+    }
+    
+    .nav {
+        width: 75%;
+        padding: 15px 0;
+        margin: 0 auto;
+        /* Размещает меню по центру      */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu a {
+        padding: 0 3px;
+    }
+    
+    .menu button {
+        background-color: lightgrey;
+    }
+    /* Конец первого раздела */
+    /* 2. Блок со слайдером, содержащим преимущества компании; */
+    /*Задаем общий размер окна для показа слайдера */
+    
+    .slider {
+        height: 700px;
+        width: 90%;
+        margin: 25px auto;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .slider_img {
+        /* Место положения слайдера*/
+        position: absolute;
+        /* Общее Время для цикла показа слайдера. Все картинки покажут за 50 сек*/
+        animation: round 50s infinite;
+        opacity: 0;
+        width: 100%;
+    }
+    
+    @keyframes round {
+        25% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 0;
+        }
+    }
+    /* Задаётся время показа картинки. От 50 секунды до 40 секунды показывается img slider.jpg
+От 40 сек до 30 сек показывается img slider2.jpg и Т.Д.
+img:nth-child(1) 
+Это img тэги
+nth-child(1) - Это 1-й в стике одинаковых img тэгов.
+В сниске их 5 штук подряд 
+*/
+    
+    img:nth-child(1) {
+        animation-delay: 40s
+    }
+    
+    img:nth-child(2) {
+        animation-delay: 30s
+    }
+    
+    img:nth-child(3) {
+        animation-delay: 20s
+    }
+    
+    img:nth-child(4) {
+        animation-delay: 10s
+    }
+    
+    img:nth-child(5) {
+        animation-delay: 0
+    }
+    /* @media(min-width: 0px) and (max-width: 320px)
+Эта запись говорит что при изменении размера экрана браузера
+от 0 до 320 px надо изменить размер слайдера
+.slider
+width: 80%;
+height: 190px;
+*/
+    
+    @media(min-width: 0px) and (max-width: 320px) {
+        .slider {
+            width: 80%;
+            height: 100px;
+        }
+    }
+    
+    @media(min-width: 321px) and (max-width: 480px) {
+        .slider {
+            width: 80%;
+            height: 190px;
+        }
+    }
+    /* / Конец 2. Блок со слайдером, содержащим преимущества компании; */
+    /* 3. Блок, содержащий особенности особенности гироскутеров, электросамокотов и сигвеев; */
+    
+    .osob {
+        width: 90%;
+        background-color: white;
+        margin: 25px auto;
+        border-radius: 18px;
+    }
+    
+    .wrap_osob {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wrap_osob img {
+        width: 45%;
+    }
+    
+    .wrap_osob p {
+        width: 70%;
+        text-align: justify;
+    }
+    /* /3. Блок, содержащий особенности особенности гироскутеров, электросамокотов и сигвеев; */
+    /* 4. Блок со списком товаров: фото, название, цена, вид; */
+    
+    .tovars {
+        width: 90%;
+        background-color: white;
+        margin: 25px auto;
+        padding: 15px 0;
+        border-radius: 18px;
+        text-align: center;
+    }
+    
+    .wrap_tovars {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .card {
+        width: 25%;
+        background-color: skyblue;
+        color: black;
+        padding: 25px;
+        border-radius: 15px;
+    }
+    
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+        height: auto;
+    }
+    /* /4. Блок со списком товаров: фото, название, цена, вид; */
+    /* 6. Блок, содержащий информацию о консультантах; */
+    
+    .cons {
+        width: 90%;
+        background-color: white;
+        margin: 25px auto;
+        padding: 15px 0;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .wrap_cons {
+        text-align: center;
+        margin: 100px 0;
+    }
+    
+    .wrap_cons img {
+        width: 60%;
+        height: auto;
+        border: solid 1px;
+        border-radius: 150px;
+    }
+    /* /6. Блок, содержащий информацию о консультантах; */
+    /* 7. Блок, содержащий бренды, представленные в магазине; */
+    
+    .brand_header {
+        text-align: center;
+    }
+    
+    .brand {
+        width: 90%;
+        background-color: white;
+        margin: 25px auto;
+        padding: 15px 0;
+        border-radius: 18px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .wrap_brand {
+        text-align: center;
+        width: 320px;
+        margin: 100px 0;
+    }
+    
+    .wrap_brand img {
+        width: 60%;
+        height: auto;
+        border: solid 1px;
+        border-radius: 35px;
+    }
+    /* /7. Блок, содержащий бренды, представленные в магазине; */
+    /* 8. Блок, содержащий полезную информацию: фото и текст к нему; */
+    /* 9. Блок, содержащий краткую информацию о компании и форму для подписки на email-рассылки. Поля формы: имя, адрес эл. почты, кнопка «подписаться». */
+    
+    .info {
+        width: 90%;
+        background-color: white;
+        margin: 25px auto;
+        padding: 15px 0;
+        border-radius: 18px;
+    }
+    
+    .info h2 {
+        text-align: center;
+    }
+    
+    .info img {
+        width: 98%;
+        display: block;
+        margin: 15px;
+    }
+    
+    .info p {
+        text-align: justify;
+        margin: 15px;
+    }
+    
+    .info form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: skyblue;
+        margin: 0 15px;
+        padding: 15px;
+        border-radius: 35px;
+    }
+    /* /8. Блок, содержащий полезную информацию: фото и текст к нему; */
+    /* /9. Блок, содержащий краткую информацию о компании и форму для подписки на email-рассылки. Поля формы: имя, адрес эл. почты, кнопка «подписаться». */
+    /* 10. Кнопка, позволяющая вернуться наверх. */
+    
+    .arrow_up {
+        position: fixed;
+        left: 25px;
+        bottom: 25px;
+    }
+    /* /10. Кнопка, позволяющая вернуться наверх. */
+    /* Подвал */
+    
+    footer {
+        background: skyblue;
+        box-shadow: 0 2px 7px black;
+        height: 100px;
+    }
+    /* Меню со ссылками в подвале  */
+    
+    footer a {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+    }
+    /* /Подвал */
